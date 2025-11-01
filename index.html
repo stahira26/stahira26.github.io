@@ -3,40 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    </head>
+    <title>Nails by Taz</title>
+    <link href=style.css rel="stylesheet">
+</head>
 <body>
-    <header>
-        <h1><em>Tahira Hussnain</em></h1>
-    </header>
-    <main>
-        <section>
-            <h2><em><b>Introduction</b></em></h2>
-            <hr>
-            <article>
-                <h3><em><b>About Me</b></em></h3>
-                <p>
-                    My name is Tahira.I'm someone who loves the idea of travelling and hopes to explore the world one day. I enjoy activities that trigger my dopamine and bring excitement,even though I haven't tried them yet but I would love to. I love cats. 
-                </p>
-                <p>One of the places I aspire to visit is Switzerland, renowned for its breathtaking landscapes and abundant natural beauty. Skydiving is one of my most ambitiuos goals. A weird fun fact about me is that my pinkey finger has four distinct phalange creases, which often intrigue others and I get to flex it since my childhood. </p>
-            </article>
-        </section>
-        <bloquote>
-            "Life is either a daring adventure or nothing at all" <cite><mark>Helen Keller</mark></cite>
-        </bloquote>
-        <selection>
-            <h2><b><em>My Goals</em></b></h2>
-        </selection>
-        <ul>
-            <li>Switzerland</li>
-            <li>Finalnd</li>
-            <li>Spain</li>
-            <li>Brazil</li>
-            <li>Morroco</li>
-        </ul>
-    </main>
+
+    <!--Header with image and overlay text-->
+    <header class="header">
+        <img src="images/nails.jpg" alt="Nail Salon" class="header-img">
+        <h1>Welcome to MY Nail Salon</h1>
+        </header>
+   
+    <!--Navigation-->
+
+    <nav class="nav">
+         <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+           <!--about section-->
+        <article>
+                <h2>Prices</h2>
+                <img src="images/nailprices.jpg" alt="Pricing" class="article-img">
+                <p>At MY Nail Salon, we are dedicated to providing top notch nail care services in a relaxing and welcoming environment. Our experienced technicians use high quality products to ensure your nails look their absolute best. From classic manicures and pedicures to gel, acrylic, and dip powder nails, we offer a wide range of services tailored to your style and preferences.
+
+We take pride in maintaining the highest standards of hygiene and comfort, so every visit feels luxurious and stress free. Whether you’re preparing for a special occasion or just need some self care, our friendly team is here to pamper you and help you leave with nails that make a statement. At MY Nail Salon, your satisfaction and confidence are our top priorities.
+
+</p>
+              </article>
+            <!--section servvices-->
+              <section class="services">
+
+            <h2> OUR SERVICES</h2>
+              
+                <ul>
+                    <li>Manicure</li>
+                    <li>Pedicure</li>
+                    <li>Polish Change</li>
+                    <li>Acrylics Nails</li>
+                    <li>Gel Nails</li>
+                    <li>Builder Gel</li>
+                    <li>Dip Powder Nails</li>
+                </ul>
+            </section>
+            
+            <!--contact ection-->
+            <section id="contact" class="contact">
+                <div class="contact-contanier"></div>
+                    
+                    <h2>Contact Us</h2>
+                    <form>
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Ennter your email" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                
+                
+                <div class="question-list">
+                <p>Don't forget to book your appointment</p>
+                </div>
+                <div class="horizontal-option">
+                    <label><input type="radio" name="interest" value="yes">Yes</label>
+                    <label><input type="radio" name="interest" value="no">No</label>
+                    <label><input type="radio" name="interest" value="next time">Next Time</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </section>
+                
+        </main>
     <footer>
-        <p>Copyright 2025 Tahira Hussnain</p>
+        <p>&copy; 2025 Copyright</p>
     </footer>
 </body>
 </html>
+        
