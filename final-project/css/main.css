@@ -1,0 +1,437 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------------------
+   GLOBAL RESET & BASICS
+----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #222;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* -----------------------------
+   COLORS
+   gold: #c78c06
+   light-gold: #ffe6ac
+   dark: #222
+----------------------------- */
+
+/* -----------------------------
+   HEADER
+----------------------------- */
+.site-header {
+  background-color: #222;
+  color: #fff;
+}
+
+.header-top {
+  background-color: #c78c06;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header-top img {
+  width: 160px;
+  margin: 0 auto;
+}
+
+/* Navigation */
+.main-nav {
+  background-color: #222;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav-item {
+  border-top: 1px solid #333;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem;
+  color: #c78c06;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: #333;
+  color: #ffe6ac;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0;
+}
+
+.search-button {
+  background-color: #c78c06;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.search-button .material-icons {
+  color: #222;
+}
+
+/* -----------------------------
+   HERO SECTION
+----------------------------- */
+.hero {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 1rem;
+  right: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 2rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin: 1rem 0;
+}
+
+.hero .btn {
+  background-color: #c78c06;
+  color: #222;
+  font-weight: 700;
+  padding: 0.75rem 1.25rem;
+  border: none;
+}
+
+/* -----------------------------
+   ABOUT SECTION
+----------------------------- */
+.about {
+  background-color: #ffe6ac;
+  padding: 2rem 1rem;
+}
+
+.about h2 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+/* -----------------------------
+   SERVICES SECTION
+----------------------------- */
+.services {
+  padding: 2rem 1rem;
+}
+
+.services h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.service {
+  margin-bottom: 2rem;
+  background-color: #ffe6ac;
+}
+
+.service-content {
+  padding: 1rem;
+}
+
+.service-content h3 {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.service-content p {
+  margin-bottom: 1rem;
+}
+
+.service-content .btn {
+  background-color: #222;
+  color: #ffe6ac;
+  padding: 0.75rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* -----------------------------
+   VISION SECTION
+----------------------------- */
+.vision {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.vision .btn.dark {
+  background-color: #c78c06;
+  color: #222;
+  font-weight: 700;
+}
+
+/* -----------------------------
+   TEAM SECTION
+----------------------------- */
+.team {
+  padding: 2rem 1rem;
+}
+
+.team h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.team-member {
+  background-color: #ffe6ac;
+  margin-bottom: 2rem;
+}
+
+.team-info {
+  padding: 1rem;
+}
+
+.team-info h3 {
+  color: #222;
+  font-weight: 700;
+}
+
+.team-info h4 {
+  color: #c78c06;
+  margin-bottom: 0.5rem;
+}
+
+/* -----------------------------
+   CONTACT SECTION
+----------------------------- */
+.contact {
+  padding: 2rem 1rem;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: fit-content;
+  background-color: #222;
+  color: #c78c06;
+  padding: 0.6rem 1rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Hours of operation */
+.hours table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.hours th,
+.hours td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+}
+
+.hours th {
+  background-color: #ffe6ac;
+}
+
+.map iframe {
+  width: 100%;
+  border: 0;
+  margin-top: 1rem;
+}
+
+/* -----------------------------
+   FOOTER
+----------------------------- */
+.site-footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: #c78c06;
+}
+
+/* -----------------------------
+   MEDIA QUERY: DESKTOP (760px+)
+----------------------------- */
+@media screen and (min-width: 760px) {
+  .nav-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .search-bar {
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+
+  .hero-content {
+    width: 45%;
+    left: 5%;
+    bottom: 4rem;
+    padding: 3rem;
+  }
+
+  .about {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+
+  .about img {
+    width: 50%;
+  }
+
+  .about-content {
+    width: 50%;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .map iframe {
+    height: 350px;
+  }
+}
